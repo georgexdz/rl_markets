@@ -44,7 +44,7 @@ set(SPDLOG_INCLUDE_DIR ${source_dir}/include CACHE INTERNAL "./ext/spdlog/includ
 ExternalProject_Add(
     catch
     PREFIX ${CMAKE_BINARY_DIR}/ext/catch
-    GIT_REPOSITORY https://github.com/philsquared/Catch.git
+    GIT_REPOSITORY https://github.com/catchorg/Catch2.git
     TIMEOUT 10
     UPDATE_COMMAND ${GIT_EXECUTABLE} pull
     CONFIGURE_COMMAND ""
